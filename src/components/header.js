@@ -4,9 +4,6 @@ import Scrollspy from 'react-scrollspy'
 import resumeData from '../resumeData';
 
 const navItems = ['home', 'about', 'resume', 'portfolio', 'contact']
-function capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 export default class Header extends Component {
   render() {
@@ -45,8 +42,12 @@ export default class Header extends Component {
             <AnchorLink href="#about"><i className="icon-down-circle"></i></AnchorLink>
           </p>
 
-        </header> 
+        </header>
       </React.Fragment>
     );
   }
+}
+
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
