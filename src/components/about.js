@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import resumeData from '../resumeData';
+import profilePic from '../profilepic.jpg'
 
 export default class About extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class About extends Component {
 
             <div className="three columns">
 
-               <img className="profile-pic"  src="images/profilepic.jpg" alt="" />
+               <img className="profile-pic" src={profilePic} alt="" />
 
             </div>
 

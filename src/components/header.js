@@ -16,7 +16,7 @@ export default class Header extends Component {
             <ul id="nav" className="nav">
               <Scrollspy items={navItems} currentClassName="current">
                 {navItems.map((item,i)=>{
-                  return <li><AnchorLink href={`#${item}`}>{capitalize(item)}</AnchorLink></li>
+                  return <li key={i}><AnchorLink href={`#${item}`}>{capitalize(item)}</AnchorLink></li>
                 })}
               </Scrollspy>
             </ul>
@@ -31,7 +31,7 @@ export default class Header extends Component {
               <ul className="social">
                 {resumeData.socialLinks && resumeData.socialLinks.map(item =>{
                   return(<li key={item.name}>
-                    <a href={item.url} target="_blank"><i className={item.className}></i></a>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer"><i className={item.className}></i></a>
                   </li>)
                 })}
               </ul>
