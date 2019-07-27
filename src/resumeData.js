@@ -90,7 +90,7 @@ let resumeData = {
     {
       name:"project3",
       description:"mobileapp",
-      imgurl:"images/portfolio/project2.png",
+      imgurl:"images/portfolio/chatter.jpg",
       title:"Hello",
       githubLink:"https://github.com",
       fullDescription:"this is a longer description about this app"
