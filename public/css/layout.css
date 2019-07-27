@@ -139,9 +139,6 @@ header .scrolldown a:hover { color: #11ABB0; }
 }
 .opaque { background-color: #333; }
 
-/* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
-
 ul#nav {
    min-height: 48px;
    width: auto;
@@ -178,6 +175,9 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
+.mobile-btn {
+   cursor: pointer;
+}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section

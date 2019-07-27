@@ -6,14 +6,23 @@ import resumeData from '../resumeData';
 const navItems = ['home', 'about', 'resume', 'portfolio', 'contact']
 
 export default class Header extends Component {
+
+  state={
+    showMobileMenu:false,
+  }
+
   render() {
+    const {showMobileMenu} = this.state
+    const navClass = showMobileMenu ? 'nav' : 'nav hider'
     return (
       <React.Fragment>
         <header id="home">
           <nav id="nav-wrap">
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-            <ul id="nav" className="nav">
+            <div className="mobile-btn"
+              onClick={()=>this.setState({showMobileMenu:!showMobileMenu})}>
+            </div>
+            {/* <div className="mobile-btn" href="#" title="Hide navigation">Hide navigation</div> */}
+            <ul id="nav" className={navClass}>
               <Scrollspy items={navItems} currentClassName="current">
                 {navItems.map((item,i)=>{
                   return <li key={i}><AnchorLink href={`#${item}`}>{capitalize(item)}</AnchorLink></li>
