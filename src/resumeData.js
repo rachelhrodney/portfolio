@@ -77,7 +77,7 @@ let resumeData = {
       imgurl:"images/portfolio/phone.jpg",
       title:"Phone App",
       githubLink:"https://github.com",
-      fullDescription:"this is a longer description about this app"
+      fullDescription:"this is a longer description about this app this is a longer description about this app this is a longer description about this app this is a longer description about this app"
     },
     {
       name:"project2",
