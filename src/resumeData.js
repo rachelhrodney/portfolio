@@ -1,8 +1,7 @@
 let resumeData = {
-  name: "Jane Doe",
-  role: "Frontend Web Developer",
+  name: "Rachel Rodney",
+  role: "UXer",
   linkedinId:"evanfeenstra",
-  skypeid: "Your skypeid",
   roleDescription: "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or play music in my free time.",
   socialLinks:[
       {
@@ -10,16 +9,6 @@ let resumeData = {
         url:"https://www.linkedin.com/in/evanfeenstra",
         className:"fa fa-linkedin"
       },
-      {
-        name:"github",
-        url:"http://github.com/",
-        className:"fa fa-github"
-      },
-      {
-        name:"skype",
-        url:"http://skype.com",
-        className:"fa fa-skype"
-      }
     ],
   aboutme:"I have finished my B.S. in Human Centered Design and Engineering, and am currently seeking a Web Development position.",
   address:"Seattle, Washington",
