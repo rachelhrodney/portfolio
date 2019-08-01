@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.3",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.8.6",
+    "react-pdf": "^4.1.0",
     "react-scripts": "3.0.1",
     "react-scrollspy": "^3.4.0"
   },
@@ -16,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage" : " https://rachelhrodney.github.io/portfolio/",
+  "homepage": " https://rachelhrodney.github.io/portfolio/",
   "eslintConfig": {
     "extends": "react-app"
   },
