@@ -1,64 +1,18 @@
 let resumeData = {
-  name: "Rachel Rodney",
+  name: "Rachel",
   role: "UXer",
-  linkedinId:"evanfeenstra",
+  linkedinId:"rachelrodney",
   roleDescription: "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or play music in my free time.",
   socialLinks:[
       {
         name:"linkedin",
-        url:"https://www.linkedin.com/in/evanfeenstra",
+        url:"https://www.linkedin.com/in/rachelrodney",
         className:"fa fa-linkedin"
       },
     ],
   aboutme:"I have finished my B.S. in Human Centered Design and Engineering, and am currently seeking a Web Development position.",
   address:"Seattle, Washington",
-  education:[
-    {
-      UniversityName:"University of Washington",
-      specialization:"Some specialization",
-      MonthOfPassing:"June",
-      YearOfPassing:"2019",
-      Achievements:"Some Achievements"
-    },
-    {
-      UniversityName:"Some University",
-      specialization:"Some specialization",
-      MonthOfPassing:"Jan",
-      YearOfPassing:"2018",
-      Achievements:"Some Achievements"
-    }
-  ],
-  work:[
-    {
-      CompanyName:"Some Company",
-      specialization:"Some specialization",
-      MonthOfLeaving:"Jan",
-      YearOfLeaving:"2018",
-      Achievements:"Some Achievements"
-    },
-    {
-      CompanyName:"Some Company",
-      specialization:"Some specialization",
-      MonthOfLeaving:"Jan",
-      YearOfLeaving:"2018",
-      Achievements:"Some Achievements"
-    }
-  ],
-  skillsDescription:"My skills:",
-  skills:[
-    {
-      skillname:"Reactjs",
-      level:90,
-    },
-    {
-      skillname:"HTML5",
-      level:70,
-    },
-    {
-      skillname:"CSS",
-      level: 80,
-    },
-  ],
+
   portfolio:[
     {
       name:"project1",
