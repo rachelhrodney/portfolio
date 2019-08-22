@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    text-align: right;
@@ -48,7 +48,7 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width: 85%;
+   width: 70%; 
    padding-bottom: 30px;s
    text-align: center;
 }
@@ -58,32 +58,17 @@ header .banner-text {
    position: left; 
 }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: black;
+   font: 90px/1.3em 'opensans-bold', sans-serif;
+   color: white;
    letter-spacing: -2px;
-   margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px burlywood;
-   padding-right: 150px;
+   width: 90%;
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif, italic;
-   color: black;
-   margin: 0 auto;
-   width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-header .banner-text h3 span,
-header .banner-text h3 a {
-   color: #fff;
-}
-header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: white;
+   width: 90%;
 }
 
-/* header social links */
 header .social {
    margin: 24px 0;
    padding: 0;
@@ -96,7 +81,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #EFBA30; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -118,7 +103,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #EFBA30; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -195,7 +180,7 @@ ul#nav li.current a { color: #EFBA30; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #EFBA30; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -243,7 +228,7 @@ ul#nav li.current a { color: #EFBA30; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #EFBA30; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -252,7 +237,7 @@ ul#nav li.current a { color: #EFBA30; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #EFBA30;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -412,9 +397,10 @@ ul#nav li.current a { color: #EFBA30; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background:white;
    padding-top: 90px;
    padding-bottom: 60px;
+   min-height:100vh;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -972,7 +958,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #EFBA30;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
@@ -1003,4 +989,4 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #EFBA30; }

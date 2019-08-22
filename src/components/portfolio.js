@@ -15,10 +15,26 @@ export default class Porfolio extends Component {
   render() {
     const { modal } = this.state
     return (<section id="portfolio">
-      <div className="row">
-        <div className="twelve columns collapsed">
-          <h1>Check Out Some of My Work.</h1>
-          <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
+
+          <h1>Check Out Some of My Adventures.</h1>
+
+          <div id="portfolio-wrapper">
+            {
+              resumeData.portfolio && resumeData.portfolio.map((item, i) => {
+                return (
+                  <div className={"bubble bubble-"+i} onClick={() => this.setState({ modal: item })}
+                  style={{
+                    backgroundImage:`url(${item.imgurl})`
+                  }}>
+
+                  </div>
+                )
+              })
+            }
+          </div>
+
+{/* 
+           <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
             {
               resumeData.portfolio && resumeData.portfolio.map((item, i) => {
                 return (
@@ -38,24 +54,31 @@ export default class Porfolio extends Component {
                 )
               })
             }
-          </div>
-        </div>
-      </div>
+          </div> */}
 
       <Modal
         visible={modal&&modal.name}
-        width="600"
-        height="400"
+        width="90%"
+        height="90%"
         effect="fadeInUp"
         onClickAway={() => this.closeModal()}
       >
         <div className="portfolio-modal">
           <div>
-            <h1>{modal.title}</h1>
-            <p>{modal.fullDescription}</p>
-            <a href={modal.githubLink} target="_blank" rel="nonopener noreferrer">
-              <i className="fa fa-github"></i>&nbsp;
-              GitHub Respository</a>
+          <h2 style={{ textAlign: 'center' }}>{modal.subtitle}</h2>
+            <h1 style={{ textAlign: 'center' }}>{modal.title}</h1>
+            <div className="small-images">
+              {modal.images && modal.images.map(img=>{
+                return <img src={img} height="200"/>
+              })}
+            </div>
+            <h3>{modal.p1title}</h3>
+            <p>{modal.p1description}</p>
+            <p>{modal.fullDescription}<img src={modal.img1} height="200"/></p>
+            <h3>{modal.p2title}</h3>
+            <p>{modal.p2description}</p>
+            <h3>{modal.p3title}</h3>
+            <p>{modal.p3description}</p>
           </div>
           <button onClick={() => this.closeModal()}>Close</button>
         </div>

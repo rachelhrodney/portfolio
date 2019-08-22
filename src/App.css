@@ -1,5 +1,5 @@
 header {
-  background: white /*url(./header.jpg)*/ no-repeat top center;
+  background: white url(./map2.jpg) no-repeat top center;
   background-size: cover !important;
 	-webkit-background-size: cover !important;
 }
@@ -7,10 +7,36 @@ header {
 .portfolio-modal {
   padding:25px;
   height:100%;
+  overflow: scroll;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
+}
+
+#portfolio-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+  #portfolio-wrapper{
+    flex-direction:column;
+  }
+}
+.bubble{
+  margin:8px;
+  width:300px;
+  height:300px;
+  border-radius: 100%;
+  opacity:1;
+  cursor: pointer;
+  flex-shrink:0;
+  background-position: center;
+  background-size: cover;
+}
+.bubble:hover{
+  opacity:0.7;
 }
 
 .react-pdf__Page__canvas {

@@ -16,7 +16,7 @@
    header .banner-text h1 {
       font: 80px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;
-      margin: 0 auto 12px auto;
+      /* margin: 0 auto 12px auto; */
    }
 
 }
@@ -196,7 +196,7 @@
    header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
    header .banner-text h3 {
       font: 16px/1.9em 'librebaskerville-regular', serif;
-      width: 85%;
+      width: 80%;
    }
    header .banner-text hr {
       width: 80%;
@@ -337,7 +337,6 @@
       line-height: 54px;
    }
 
-
 }
 
 /* mobile narrow
@@ -354,11 +353,11 @@
    header .banner { padding-top: 24px; }
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;      
-      margin: 0 auto 24px auto;
+      /* margin: 0 auto 24px auto; */
    }
    header .banner-text h3 {
       font: 14px/1.9em 'librebaskerville-regular', sans-serif;
-      width: 90%;
+      width: 80%;
    }
   
    /* header social links */
